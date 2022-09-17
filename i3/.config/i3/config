@@ -129,6 +129,10 @@ bindsym $mod+F2 exec xrandr --auto
 bindsym $mod+F3 exec xrandr --output HDMI-1 --above eDP-1
 bindsym $mod+Ctrl+p exec flameshot gui
 
+
+bindsym $mod+c exec bluetoothctl connect DC:F4:CA:F3:BD:FF
+bindsym $mod+Ctrl+c exec bluetoothctl disconnect DC:F4:CA:F3:BD:FF
+
 # bindsym $mod+z gaps outer current plus 5
 # bindsym $mod+Shift+z gaps outer current minus 5
 # bindsym $mod+s gaps inner current plus 5
