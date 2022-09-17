@@ -7,17 +7,14 @@ window:
 
 font:
   normal:
-    family: "JetbrainsMono"
+    family: 'Fira Code Nerdfont'
     style: Regular
   bold:
-    family: "JetbrainsMono"
+    family: 'Fira Code Nerdfont'
     style: Bold
   italic:
-    family: "JetbrainsMono"
+    family: 'Fira Code Nerdfont'
     style: italic
-  bold_italic:
-    family: "JetbrainsMono"
-    style: Bold Italic
   size: 8
 
  # Colors (Gruvbox dark)
@@ -79,9 +76,9 @@ colors:
     cyan:    '#427b58'
     white:   '#928374'
 
-visual_bell:
+bell:
   animation: EaseOutExpo
   duration: 0
   color: '0xffffff'
 
-background_opacity: 0.90
+    #background_opacity: 0.90
