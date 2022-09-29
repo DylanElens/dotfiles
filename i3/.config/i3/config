@@ -128,6 +128,7 @@ bindsym $mod+F1 exec xrandr --output HDMI-1 --mode 2560x1440 --rate 120 && xrand
 bindsym $mod+F2 exec xrandr --auto
 bindsym $mod+F3 exec xrandr --output HDMI-1 --above eDP-1
 bindsym $mod+Ctrl+p exec flameshot gui
+bindsym $mod+Ctrl+1 exec zathura ~/Documents/school/i2c/'intro2crypto-aug2022 - 2223 Introduction to Cryptography (KW1 V).pdf'
 
 
 bindsym $mod+c exec bluetoothctl connect DC:F4:CA:F3:BD:FF
