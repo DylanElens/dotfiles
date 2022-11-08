@@ -60,9 +60,8 @@ load {
 }
 
 memory {
-        format = " %percentage_used"
-        threshold_degraded = "10%"
-        format_degraded = "MEMORY: %free"
+        memory_used_method = classical
+        format = "  %used of %total"
 }
 
 disk "/" {
