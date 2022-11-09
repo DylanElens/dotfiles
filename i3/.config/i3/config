@@ -129,8 +129,9 @@ bindsym $mod+F2 exec xrandr --auto
 bindsym $mod+F3 exec xrandr --output HDMI-1 --above eDP-1
 bindsym $mod+Ctrl+p exec flameshot gui
 bindsym $mod+Ctrl+1 exec zathura ~/Documents/school/i2c/'intro2crypto-aug2022 - 2223 Introduction to Cryptography (KW1 V).pdf'
-bindsym $mod+Ctrl+2 exec zathura ~/Documents/school/Operating\ Systems/Assignment2/assignment2.pdf # Operating\ Systems/
-
+bindsym $mod+Ctrl+2 exec zathura ~/Documents/school/AcademicWriting/gopen_and_swan_science_of_scientific_writing.pdf
+bindsym $mod+Ctrl+3 exec zathura ~/Documents/school/AlgorithmsAndDatastructers/gopen_and_swan_science_of_scientific_writing.pdf
+bindsym $mod+Ctrl+4 exec zathura ~/Documents/school/AlgorithmsAndDatastructures/practical/problem2.en.pdf
 
 bindsym $mod+c exec bluetoothctl connect DC:F4:CA:F3:BD:FF
 bindsym $mod+Ctrl+c exec bluetoothctl disconnect DC:F4:CA:F3:BD:FF
@@ -139,9 +140,9 @@ bindsym $mod+Ctrl+c exec bluetoothctl disconnect DC:F4:CA:F3:BD:FF
 # bindsym $mod+Shift+z gaps outer current minus 5
 # bindsym $mod+s gaps inner current plus 5
 # bindsym $mod+Shift+s gaps inner current minus 5
-#gaps inner 30
+# gaps inner 30
 
-#for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 2
 exec_always --no-startup-id feh --bg-scale /usr/share/backgrounds/warty-final-ubuntu.png
 exec_always --no-startup-id setxkbmap -layout us -option caps:escape
 exec_always --no-startup-id echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
