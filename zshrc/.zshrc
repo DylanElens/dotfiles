@@ -114,6 +114,8 @@ alias zsh="nvim ~/.zshrc"
 alias nv="cd ~/.config/nvim/ && nvim init.lua"
 alias frontend="cd ~/Documents/worldOfContent/frontend"
 alias backend="cd ~/Documents/worldOfContent/backend"
+alias turbo="echo "0" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost enabled'"
+alias noturbo="echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost disabled'"
 
 export FZF_BASE="$HOME/.fzf"
 
