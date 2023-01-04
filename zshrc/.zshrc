@@ -113,6 +113,7 @@ alias term="nvim ~/.config/alacritty/alacritty.yml"
 alias zsh="nvim ~/.zshrc"
 alias nv="cd ~/.config/nvim/ && nvim init.lua"
 alias frontend="cd ~/Documents/worldOfContent/frontend"
+alias aoc="cd ~/Documents/personalProjects/AOC2022"
 alias backend="cd ~/Documents/worldOfContent/backend"
 alias turbo="echo "0" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost enabled'"
 alias noturbo="echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost disabled'"
@@ -123,6 +124,9 @@ export NVM_DIR="$HOME/.config/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-[ -f "/home/dylan/.ghcup/env" ] && source "/home/dylan/.ghcup/env" # ghcup-env
+#[ -f "/home/dylan/.ghcup/env" ] && source "/home/dylan/.ghcup/env" # ghcup-env
  
 alias luamake=/luamake
+export OPENAI_API_KEY=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
+
+[ -f "/home/dylan/.ghcup/env" ] && source "/home/dylan/.ghcup/env" # ghcup-env
