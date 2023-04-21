@@ -101,6 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 PATH=$PATH:~/Datagrip-2022.2.2/bin
+PATH=$PATH:~/FTBA/bin
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -112,11 +113,10 @@ alias i3="nvim ~/.config/i3/config"
 alias term="nvim ~/.config/alacritty/alacritty.yml"
 alias zsh="nvim ~/.zshrc"
 alias nv="cd ~/.config/nvim/ && nvim init.lua"
-alias frontend="cd ~/Documents/worldOfContent/frontend"
 alias aoc="cd ~/Documents/personalProjects/AOC2022"
-alias backend="cd ~/Documents/worldOfContent/backend"
 alias turbo="echo "0" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost enabled'"
 alias noturbo="echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost disabled'"
+alias digital="bash ~/Documents/school/processors/Digital/Digital.sh &"
 
 export FZF_BASE="$HOME/.fzf"
 

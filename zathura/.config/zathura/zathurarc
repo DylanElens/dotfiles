@@ -1,0 +1,4 @@
+set selection-clipboard clipboard
+set recolor   
+set recolor-lightcolor \#1E1E2E
+set recolor-keephue
