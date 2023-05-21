@@ -1,10 +1,14 @@
-source ~/.config/zsh/zsh-snap/znap.zsh
+zstyle ':znap:*' repos-dir ~/Documents
+source ~/Downloads/zsh-snap/znap.zsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-
+export GTK_THEME=Adwaita:dark
+export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
+export QT_STYLE_OVERRIDE=adwaita-dark
+export WLR_NO_HARDWARE_CURSORS=1
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -113,6 +117,7 @@ alias i3="nvim ~/.config/i3/config"
 alias term="nvim ~/.config/alacritty/alacritty.yml"
 alias zsh="nvim ~/.zshrc"
 alias nv="cd ~/.config/nvim/ && nvim init.lua"
+alias hypr="cd ~/.config/hypr/ && nvim hyprland.conf"
 alias aoc="cd ~/Documents/personalProjects/AOC2022"
 alias turbo="echo "0" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost enabled'"
 alias noturbo="echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send 'Turbo Boost disabled'"
