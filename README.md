@@ -26,6 +26,7 @@ The following dependencies are required to use these dotfiles:
 * Lazygit
 * Lazydocker
 * Kitty
+* tmux
 * stow
 
 ## Installation
