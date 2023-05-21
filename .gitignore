@@ -1,2 +1,4 @@
 lazygit/.config/lazygit/state.yml
-ssh/*
+ssh/.ssh/.id_rsa
+ssh/.ssh/.id_rsa.pub
+ssh/.ssh/known_hosts
