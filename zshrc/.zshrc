@@ -104,7 +104,6 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-PATH=$PATH:~/Datagrip-2022.2.2/bin
 PATH=$PATH:~/FTBA/bin
 
 # Example aliases
@@ -134,5 +133,7 @@ export NVM_DIR="$HOME/.config/nvm"
  
 alias luamake=/luamake
 export OPENAI_API_KEY=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
+
+export PATH="DataGrip-2023.1.1/bin:$PATH"
 
 [ -f "/home/dylan/.ghcup/env" ] && source "/home/dylan/.ghcup/env" # ghcup-env
