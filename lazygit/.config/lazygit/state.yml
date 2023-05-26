@@ -2,9 +2,9 @@ lastupdatecheck: 0
 recentrepos:
 - /home/dylan/dotfiles
 - /home/dylan/Documents/PixelMonsters/pm-kuukz
+- /home/dylan/Documents/homesurf-backend
 - /home/dylan/.config/nvim
 - /home/dylan/Documents/homesurf
-- /home/dylan/Documents/homesurf-backend
 - /home/dylan/Documents/worldOfContent/backend
 - /home/dylan/Documents/school/AlgorithmsAndDatastructures/practical2
 - /home/dylan/Documents/worldOfContent/as2-read
@@ -18,4 +18,5 @@ startuppopupversion: 5
 customcommandshistory:
 - q
 - ""
+- git
 hidecommandlog: false
