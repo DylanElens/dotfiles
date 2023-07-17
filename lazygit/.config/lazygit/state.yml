@@ -1,9 +1,14 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/dylan/dotfiles
 - /home/dylan/Documents/PixelMonsters/pm-kuukz
-- /home/dylan/Documents/homesurf-backend
+- /home/dylan/Documents/PixelMonsters/application
+- /home/dylan/Documents/PixelMonsters/code-monsters
+- /home/dylan/Documents/PixelMonsters/mantis-free-react-admin-template
+- /home/dylan/Documents/Obsidian Vault
+- /home/dylan/Documents/PixelMonsters/ectechnology-cleanup
+- /home/dylan/dotfiles
 - /home/dylan/.config/nvim
+- /home/dylan/Documents/homesurf-backend
 - /home/dylan/Documents/homesurf
 - /home/dylan/Documents/worldOfContent/backend
 - /home/dylan/Documents/school/AlgorithmsAndDatastructures/practical2
@@ -19,4 +24,5 @@ customcommandshistory:
 - q
 - ""
 - git
+- git checkout origin/server-2023 app/Notifications/BaseNotification.php
 hidecommandlog: false
