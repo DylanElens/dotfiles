@@ -15,9 +15,12 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
+        "custom/updates",
         "network",
         "cpu",
         "temperature",
+        "custom/gpu-usage",
+        "custom/gpu-temperature",
         "memory",
         "pulseaudio",
         "pulseaudio#microphone"
@@ -26,9 +29,20 @@
     "hyprland/window": {
         "format": "{}"
     },
+    "custom/gpu-usage": {
+      "exec": "cat /sys/class/hwmon/hwmon4/device/gpu_busy_percent",
+      "format": "GPU: {}%",
+      "return-type": "",
+      "interval": 1
+    },
+   "custom/gpu-temperature": {
+  	    "exec": "echo $(($(cat /sys/class/hwmon/hwmon4/temp1_input) / 1000))",
+  	    "interval": 1,
+  	    "format": "{}°C "
+   },
    "temperature": {
   	    "thermal-zone": 2,
-  	    "hwmon-path": "/sys/class/hwmon/hwmon3/temp1_input",
+  	    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input",
   	    "critical-threshold": 80,
   	    "interval": 1,
   	    "format-critical": "{temperatureC}°C ",
@@ -68,14 +82,14 @@
     },
      "cpu": {
          "interval": 1,
-         "format": "󰻠 {}",
+         "format": "󰻠 {max_frequency} Ghz",
          "max-length": 10,
          "on-click": ""
     },
      "memory": {
          "interval": 30,
-         "format": " {}%",
-         "format-alt":" {used:0.1f}G",
+         "format":" {used:0.1f}G",
+         "format-alt": " {}%",
          "max-length": 10
      },
     "custom/updates": {
@@ -83,12 +97,6 @@
         "interval": 7200,
         "format": " {}"
     },
-    // "custom/language": {
-    //     "exec": "cat /tmp/kb_layout",
-    //     "interval": 3,
-    //     "format": " {}",
-    //     "tooltip": false
-    // },
     "custom/weather" : {
         "tooltip" : true,
         "format" : "{}",

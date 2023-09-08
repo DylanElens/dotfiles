@@ -1,24 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
+- /home/dylan/dotfiles
+- /home/dylan/Documents/motorroutes
+- /home/dylan/Documents/PixelMonsters/lambda-motorroutes-tomtom
 - /home/dylan/Documents/PixelMonsters/pm-kuukz
 - /home/dylan/Documents/PixelMonsters/application
-- /home/dylan/Documents/PixelMonsters/code-monsters
-- /home/dylan/Documents/PixelMonsters/mantis-free-react-admin-template
-- /home/dylan/Documents/Obsidian Vault
-- /home/dylan/Documents/PixelMonsters/ectechnology-cleanup
-- /home/dylan/dotfiles
 - /home/dylan/.config/nvim
-- /home/dylan/Documents/homesurf-backend
-- /home/dylan/Documents/homesurf
-- /home/dylan/Documents/worldOfContent/backend
-- /home/dylan/Documents/school/AlgorithmsAndDatastructures/practical2
-- /home/dylan/Documents/worldOfContent/as2-read
-- /home/dylan/Documents/school/i2c
-- /home/dylan/Documents/personalProjects/AOC2022
-- /home/dylan/Documents/school/AlgorithmsAndDatastructures/practical
-- /home/dylan/Documents/school/Operating Systems/Assignment3/assignment3
-- /home/dylan/Documents/school/Operating Systems/Assignment2/assignment2
-- /home/dylan/Documents/school/Operating Systems/Assignment1/assignment1
 startuppopupversion: 5
 customcommandshistory:
 - q
@@ -26,3 +13,4 @@ customcommandshistory:
 - git
 - git checkout origin/server-2023 app/Notifications/BaseNotification.php
 hidecommandlog: false
+ignorewhitespaceindiffview: false

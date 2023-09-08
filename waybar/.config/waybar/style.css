@@ -68,6 +68,8 @@ tooltip {
 }
 
 #cpu,
+#custom-gpu-usage,
+#custom-gpu-temperature,
 #temperature,
 #memory{
     background: #1e1e2e;
