@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+while :
+do
+  updates=$(checkupdates-with-aur | wc -l)
+  echo "$updates/$(pacman -Q | wc -l)"
+  sleep 600
+done

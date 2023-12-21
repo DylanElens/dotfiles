@@ -10,12 +10,13 @@
         "clock",
         "custom/weather",
         "battery",
-        "wlr/workspaces"
+        "hyprland/workspaces"
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "tray",
         "custom/updates",
+        "custom/ratbat",
         "network",
         "cpu",
         "temperature",
@@ -58,7 +59,7 @@
         "format-icons": [" ", " ", " ", " ", " "],
         "max-length": 25
     },
-    "wlr/workspaces": {
+    "hyprland/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "all-outputs": true,
@@ -93,9 +94,13 @@
          "max-length": 10
      },
     "custom/updates": {
-        "exec": "(yay -Qua) | wc -l",
-        "interval": 7200,
-        "format": " {}"
+        "exec": "$HOME/.config/waybar/scripts/updates",
+        "signal": 12,
+        "format": "{} ",
+    },
+    "custom/ratbat": {
+      "return-type": "json",
+      "exec": "$HOME/.config/waybar/scripts/ratbat.sh"
     },
     "custom/weather" : {
         "tooltip" : true,
@@ -118,8 +123,8 @@
         "tooltip": false,
         "format-muted": " Muted",
         "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
+        "on-scroll-up": "pamixer -i 5 --allow-boost",
+        "on-scroll-down": "pamixer -d 5 --allow-boost",
         "scroll-step": 5,
         "format-icons": {
             "headphone": "",
