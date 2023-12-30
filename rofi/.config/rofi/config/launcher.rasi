@@ -17,7 +17,7 @@ window {
     border:                         2px;
     border-color:                   @BDR;
     border-radius:                  10px;
-    width:                          500px;
+    width:                          800px;
     anchor:                         center;
     x-offset:                       0;
     y-offset:                       0;
@@ -37,7 +37,7 @@ textbox-prompt-colon {
     background-color:               @SEL;
     text-color:                     @FG;
     padding:                        8px 12px 8px 12px;
-    font:			                "Iosevka Nerd Font 10";
+    font:			                "BerkeleyMono Nerd Font 18";
 }
 
 entry {
@@ -76,7 +76,7 @@ case-indicator {
 
 listview {
     background-color:               @BG;
-    columns:                        1;
+    columns:                        2;
     lines:			                7;
     spacing:                        4px;
     cycle:                          false;
