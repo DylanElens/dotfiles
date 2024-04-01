@@ -6,10 +6,9 @@
   "passtrough": false,
   "gtk-layer-shell": true,
   "height": 0,
-  "modules-left": ["clock", "custom/weather", "battery", "hyprland/workspaces"],
+  "modules-right":  [ "tray", "clock", "custom/weather"],
   "modules-center": ["hyprland/window"],
-  "modules-right": [
-    "tray",
+  "modules-left": [
     "custom/updates",
     "custom/ratbat",
     "network",
@@ -19,7 +18,8 @@
     "custom/gpu-temperature",
     "memory",
     "pulseaudio",
-    "pulseaudio#microphone"
+    "pulseaudio#microphone",
+    "hyprland/workspaces"
   ],
 
   "hyprland/window": {
@@ -110,8 +110,9 @@
     "spacing": 10
   },
   "clock": {
-    "format": "{: %R   %d/%m}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+      "interval": 60,
+      "format": "{:%H:%M %d-%m-%Y}",
+      "max-length": 25
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",

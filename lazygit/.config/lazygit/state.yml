@@ -1,10 +1,10 @@
 lastupdatecheck: 1698413364
 recentrepos:
 - /home/dylan/dotfiles
+- /home/dylan/Documents/giphouse/verbelco-waterweb-spring24
 - /home/dylan/Documents/projects/interpreterInGo
 - /home/dylan/Documents/PixelMonsters/code-monsters
 - /home/dylan/.config/nvim
-- /home/dylan/Documents/giphouse/verbelco-waterweb-spring24
 - /home/dylan/Documents/PixelMonsters/motorroutes-app
 - /home/dylan/Documents/motorroutes
 - /home/dylan/Documents/PixelMonsters/gripp_extern_platform
@@ -15,6 +15,7 @@ recentrepos:
 - /home/dylan/Documents/PixelMonsters/kuukz
 - /home/dylan/Documents/PixelMonsters/lambda-motorroutes-tomtom
 startuppopupversion: 5
+lastversion: 0.41.0
 customcommandshistory:
 - git checkout react-native
 - git checkout dev docker-compose.yml
@@ -25,3 +26,8 @@ customcommandshistory:
 - git pull origin develop
 hidecommandlog: false
 ignorewhitespaceindiffview: false
+diffcontextsize: 3
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: when-maximised
