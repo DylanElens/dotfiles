@@ -13,12 +13,15 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 floating_modifier $mod
 
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 bindsym $mod+w kill
 
-#bindsym $mod+d exec rofi -show run
-bindsym $mod+d exec dmenu_run 
+
+# bindsym $mod+d exec rofi -show run
+
+bindsym $mod+d exec /home/dylan/dotfiles/rofi/.config/rofi/bin/launcher
+# bindsym $mod+d exec dmenu_run 
 
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -113,10 +116,10 @@ mode "resize" {
 
 #bindsym $mod+r mode "resize"
 
-bar {
-        position top  
-        status_command i3status
-}
+# bar {
+        # position top  
+        # status_command polybar
+# }
 
 # increase screen brightness
 bindsym XF86MonBrightnessUp exec sudo brightnessctl set +5% 
@@ -127,7 +130,7 @@ bindsym $mod+x exec i3lock -i ~/Pictures/unicat.png
 bindsym $mod+F1 exec xrandr --output HDMI-1 --mode 2560x1440 --rate 120 && xrandr --output eDP-1 --off 
 bindsym $mod+F2 exec xrandr --auto
 bindsym $mod+F3 exec xrandr --output HDMI-1 --above eDP-1
-bindsym $mod+Ctrl+p exec flameshot gui
+# bindsym $mod+Ctrl+p exec flameshot gui
 bindsym $mod+Ctrl+1 exec zathura ~/Documents/school/i2c/'intro2crypto-aug2022 - 2223 Introduction to Cryptography (KW1 V).pdf'
 bindsym $mod+Ctrl+2 exec zathura ~/Documents/school/AcademicWriting/gopen_and_swan_science_of_scientific_writing.pdf
 bindsym $mod+Ctrl+3 exec zathura ~/Documents/school/AlgorithmsAndDatastructers/gopen_and_swan_science_of_scientific_writing.pdf
@@ -144,22 +147,25 @@ bindsym $mod+Ctrl+t exec echo "1" | sudo tee /sys/devices/system/cpu/intel_pstat
 bindsym $mod+t exec echo "0" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo && notify-send "Turbo Boost enabled"
 
 
-bindsym $mod+p exec pavucontrol
-bindsym $mod+m exec blueman-manager
-# bindsym $mod+z gaps outer current plus 5
-# bindsym $mod+Shift+z gaps outer current minus 5
-# bindsym $mod+s gaps inner current plus 5
-# bindsym $mod+Shift+s gaps inner current minus 5
+
+bindsym $mod+p exec flameshot gui
 gaps inner 10
 
 for_window [class=".*"] border pixel 4
 # exec_always --no-startup-id feh --bg-scale /usr/share/backgrounds/warty-final-ubuntu.png
-exec_always --no-startup-id feh --bg-scale ~/Pictures/unicat.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/background-image.jpg
+# start polybar 
+exec_always --no-startup-id pkill polybar && polybar 
+
+exec_always --no-startup-id sudo cpupower frequency-set --freq 4.8GHz
+
+#start polkit gnome
+exec_always --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
 # exec_always --no-startup-id feh --bg-scale ~/Pictures/gruvsolar.png
 exec_always --no-startup-id setxkbmap -layout us -option caps:escape
-exec_always --no-startup-id echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
-exec_always --no-startup-id set r rate 200 50
-exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
+# exec_always --no-startup-id echo "1" | sudo tee /sys/devices/system/cpu/intel_pstate/no_turbo
+# exec_always --no-startup-id set r rate 200 50
+# exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 # exec_always --no-startup-id compton
 
