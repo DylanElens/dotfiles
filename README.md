@@ -5,6 +5,7 @@ These are my current Hyprland dotfiles, which are the configuration files that I
 ## Screenshots
 
 Here are some screenshots of my desktop, configured with these dotfiles:
+😙
 
 
 ![image](https://github.com/DylanElens/dotfiles/assets/16319495/336b0cab-9abf-4c1e-9c43-f76aa1b4d31c)
